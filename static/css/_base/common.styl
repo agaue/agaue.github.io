@@ -1,0 +1,21 @@
+//Reset for this site
+body
+  font-family font-custom-family
+  font-size font-size
+  line-height line-height
+  background color-background 
+
+h1
+  font-size font-size*3.5
+  color color-logo
+  @media tablet
+    font-size font-size*4
+
+a
+  text-decoration none
+  &:hover,&:focus
+    outline 0
+    text-decoration none
+    transition color .5s,background .5s
+  &:hover:before
+    transition color .5s,background .5s

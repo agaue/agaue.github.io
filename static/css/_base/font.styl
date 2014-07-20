@@ -1,0 +1,33 @@
+/*! icon & custom Font*/
+font-url(filename)
+  return '../font/' + filename
+
+font-smoothing()
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+customfont(family, filename)
+  @font-face
+    font-family family
+    font-weight normal
+    font-style normal
+    src url(font-url(filename + '.eot'))
+    src url(font-url(filename + '.eot?#iefix')) format('embedded-opentype'),
+    url(font-url(filename + '.svg#'+ family)) format('svg'), 
+    url(font-url(filename + '.woff')) format('woff'), 
+    url(font-url(filename + '.ttf')) format('truetype')    
+    
+iconfont(family, filename)
+  @font-face
+    font-family family
+    font-style normal
+    font-weight normal
+    src url(font-url(filename + ".eot?wiimqy"))
+    src url(font-url(filename + ".eot?#iefixwiimqy")) format("embedded-opentype"),
+         url(font-url(filename + ".woff?wiimqy")) format("woff"),
+         url(font-url(filename + ".ttf?wiimqy")) format("truetype"),
+         url(font-url(filename + ".svg?wiimqy#icomoon")) format("svg")
+
+/*! Call */
+customfont(font-custom-family,font-custom-filename)
+iconfont(font-icon-family,font-icon-filename)

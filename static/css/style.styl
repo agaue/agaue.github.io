@@ -1,0 +1,208 @@
+@import 'nib'
+global-reset()
+@import '_base/variable'
+@import '_base/common'
+@import '_base/font'
+
+#container
+  width 100%
+  margin 0 auto
+
+header
+  padding 0 1.5em
+  position relative
+  background url(img-background) repeat
+  overflow hidden
+  @media tablet
+    padding 2em 4em
+
+.agaue
+  display block
+  position absolute
+  width 3em
+  height 3em
+  top 1em
+  right 4%
+  color color-logo
+  &:hover
+    color color-link-hover
+  &:after
+    font-family font-icon-family
+    font-size font-size*2.4
+    font-smoothing()
+    content "\f09b"   
+
+.introduce
+  height 280px
+  @media phone
+    height 240px
+  margin-top 1.5em
+  position relative
+  p
+    text-align center
+    font-family font-custom-family
+    font-size font-size*2
+    line-height 1.7
+    @media tablet
+      text-align left
+      font-size font-size*2.5
+      margin-top 4em
+
+.star
+  position absolute
+  bottom 1em
+  left 30%
+  @media phone
+    left 40%
+  @media tablet
+    left 0
+
+.feature-wrap
+  clearfix()
+  margin 0.5em 0
+  overflow hidden
+  li
+    float left
+    width 90%
+    margin 1.8em 0 1.8em 4%
+    padding 0 1em
+    @media phone
+      margin 1.8em 0 1.8em 12%
+    @media tablet
+      width 40%
+      height 110px
+      margin 1.8em 0 1.8em 6%
+    p
+      width 80%
+      margin 0.3em 0 0 1.8em
+      font-size font-size*1.2
+    h3     
+      color color-feature-title
+      font-size font-size*1.7
+      &:before
+        font-family font-icon-family
+        font-size 90%
+        font-smoothing()
+        padding-right 0.5em
+      &:hover
+       color color-sudo
+       transition color .5s
+
+.feature-fast
+  &:before
+    content "\e601"
+  +p
+    margin 0.3em 0 0 1.5em !important
+
+.feature-markdown
+  &:before
+    content "\e600"
+
+.feature-deploy
+  &:before
+    content "\f0ee"
+
+.feature-style
+  &:before
+    content "\f004"
+
+.cmd-wrap
+  clearfix()
+  font-family font-mono
+  background color-cmd
+  color color-code
+  padding 1em 0 1em 2.5em
+  overflow hidden
+  @media phone
+    padding 1em 0 1em 17%
+  @media tablet
+    padding 1em 0 1em 5%
+    width 40%
+    margin 0 auto
+    max-width 500px
+  li
+    float left
+    width 90%
+    &:before
+      content "$"
+      color color-sudo
+      padding-right 0.5em
+
+.share-wrap
+  margin 2em 0
+  text-align center
+  a
+    display block
+    padding 2%
+    width 60%
+    margin 0 auto
+    font-size font-size*1.5
+    color color-logo
+    border 1px solid color-logo
+    @media tablet
+      width 18%
+      max-width 250px
+    &:hover
+      color color-code
+      background color-logo
+      transition color .25s,background .5s
+
+footer
+  margin 1em 0
+  padding 1em 0
+  border-top 1px solid color-line 
+  position relative
+  p
+   text-align center
+   @media tablet
+    text-align left
+    padding-left 5%
+   a
+     &:hover
+       color color-sudo
+
+.twitter
+  display block
+  position absolute
+  color color-logo
+  left 50%
+  bottom -20px
+  width 1em
+  height 1em
+  @media phone
+    left 55%
+  @media tablet
+    width 1.5em
+    height 1.5em
+    font-size font-size*2
+    left 90%
+    bottom 10px
+  &:before
+    font-family font-icon-family
+    font-smoothing()
+    content "\f099"
+  &:hover
+    color color-sudo
+
+.weibo
+  display block
+  color color-logo
+  left 40% 
+  width 1em
+  height 1em
+  position absolute
+  bottom -20px
+  @media phone
+    left 45%
+  @media tablet
+    width 1.5em
+    height 1.5em
+    font-size font-size*2
+    left 85%
+    bottom 10px
+  &:before
+    font-family font-icon-family
+    font-smoothing()
+    content "\f18a"
+  &:hover
+    color color-sudo
