@@ -23,10 +23,10 @@ header{padding:0 1.5em;position:relative;background:url("../img/geometry.png") r
 .introduce{height:280px;margin-top:1.5em;position:relative;}
 @media only screen and (min-width: 568px){.introduce{height:240px}
 }.introduce p{text-align:center;font-family:'sourcesanspro-extralight';font-size:200%;line-height:1.7;}
-@media only screen and (min-width: 1024px){.introduce p{text-align:left;font-size:250%;margin-top:4em}
+@media only screen and (min-width: 1024px){.introduce p{font-size:250%;margin-top:3em}
 }.star{position:absolute;bottom:1em;left:30%;}
 @media only screen and (min-width: 568px){.star{left:40%}
-}@media only screen and (min-width: 1024px){.star{left:0}
+}@media only screen and (min-width: 1024px){.star{left:45%}
 }.feature-wrap{zoom:1;margin:.5em 0;overflow:hidden;}
 .feature-wrap:before,.feature-wrap:after{content:"";display:table}
 .feature-wrap:after{clear:both}
